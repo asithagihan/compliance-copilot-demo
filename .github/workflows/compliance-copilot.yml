@@ -8,7 +8,7 @@ on:
 jobs:
     compliance-copilot:
       runs-on: ubuntu-latest
-      env:
+      environment: production
       permissions:
         contents: read
         issues: write
