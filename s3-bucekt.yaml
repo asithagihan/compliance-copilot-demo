@@ -13,7 +13,7 @@ Resources:
     Type: 'AWS::S3::BucketPolicy'
     Properties:
       PolicyDocument:
-        Id: MyPolicy
+        Id: MyPolicyNew
         Version: 2012-10-17
         Statement:
           - Sid: PublicReadForGetBucketObjects
