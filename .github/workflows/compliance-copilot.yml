@@ -26,4 +26,3 @@ jobs:
             skipPullRequestComments: true
             folderPath: /
             excludeFolder: .github
-            iacType: AWS_CDK
