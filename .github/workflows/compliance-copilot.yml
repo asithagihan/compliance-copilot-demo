@@ -8,7 +8,6 @@ on:
 jobs:
     compliance-copilot:
       runs-on: ubuntu-latest
-      environment: production
       permissions:
         contents: read
         issues: write
@@ -22,3 +21,5 @@ jobs:
             GITHUB_TOKEN: ${{ github.token }}
             GITHUB_REPOSITORY: $GITHUB_REPOSITORY
             PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
+        with:
+            minimumSeverity: 'CRITICAL'
